@@ -1,0 +1,14 @@
+{
+  "name": "react-native-template-expo-minimum",
+  "version": "0.0.1",
+  "description": "Clean and minimalist React Native template for a quick start with TypeScript and expo.",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "files": [
+    "template",
+    "template.config.js"
+  ],
+  "author": "dodi candra <dodicandra20@gmail.com>",
+  "license": "MIT"
+}
