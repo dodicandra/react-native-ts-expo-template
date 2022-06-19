@@ -11,9 +11,11 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1807F60117B54AB21E79A2B4 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DDFF801AFF5249C600738B /* ExpoModulesProvider.swift */; };
 		6172F2D35A4C3AA820D92908 /* libPods-Awesome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-Awesome.a */; };
 		7EF68E3733C33B6898317E18 /* libPods-Awesome-AwesomeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-Awesome-AwesomeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		F1A72C88888E58E8241CA9D7 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B434759A67FFA594BF74D86 /* ExpoModulesProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,9 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Awesome/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Awesome/main.m; sourceTree = "<group>"; };
 		1D0AE47A65C8663E3B452821 /* Pods-Awesome-AwesomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome-AwesomeTests.release.xcconfig"; path = "Target Support Files/Pods-Awesome-AwesomeTests/Pods-Awesome-AwesomeTests.release.xcconfig"; sourceTree = "<group>"; };
+		2B434759A67FFA594BF74D86 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Awesome-AwesomeTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		6423831EA8574132BED9D8CC /* libPods-Awesome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Awesome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DDFF801AFF5249C600738B /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Awesome/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		6C97AB639B58BBB4B15BBE30 /* Pods-Awesome-AwesomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Awesome-AwesomeTests.debug.xcconfig"; path = "Target Support Files/Pods-Awesome-AwesomeTests/Pods-Awesome-AwesomeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Awesome/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABFE59519B596E51CEFDCCC0 /* libPods-Awesome-AwesomeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Awesome-AwesomeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +100,14 @@
 			name = Awesome;
 			sourceTree = "<group>";
 		};
+		154652C08D398E47152DEA95 /* AwesomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B434759A67FFA594BF74D86 /* ExpoModulesProvider.swift */,
+			);
+			name = AwesomeTests;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +116,15 @@
 				ABFE59519B596E51CEFDCCC0 /* libPods-Awesome-AwesomeTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5162FF2C7CF8D35AEE91AF3D /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				B8CE3AF59809FAFFA367F50F /* Awesome */,
+				154652C08D398E47152DEA95 /* AwesomeTests */,
+			);
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -122,6 +143,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E233CBF5F47BEE60B243DCF8 /* Pods */,
+				5162FF2C7CF8D35AEE91AF3D /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -135,6 +157,14 @@
 				00E356EE1AD99517003FC87E /* AwesomeTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B8CE3AF59809FAFFA367F50F /* Awesome */ = {
+			isa = PBXGroup;
+			children = (
+				65DDFF801AFF5249C600738B /* ExpoModulesProvider.swift */,
+			);
+			name = Awesome;
 			sourceTree = "<group>";
 		};
 		E233CBF5F47BEE60B243DCF8 /* Pods */ = {
@@ -403,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* AwesomeTests.m in Sources */,
+				F1A72C88888E58E8241CA9D7 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +443,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				1807F60117B54AB21E79A2B4 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +594,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -627,7 +659,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
